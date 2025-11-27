@@ -1,0 +1,167 @@
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+header{
+display: flex;
+    flex-direction: row;
+   justify-content: center;
+   background-color: rgba(248, 54, 54, 0.838);
+   padding: 20px;
+   margin:none;
+   height: 100px;
+   color: rgb(30, 30, 30);
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header-logos{
+    height: 80px;
+    width: 80px;
+    padding: 1px 30px;
+}
+
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.lottery-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 50px;
+}
+
+h2{
+    font-size: 50px;
+    margin: 10px 0;
+    color: rgb(20, 3, 4);
+}
+.ticket-image{
+    height: 350px;
+    width: 400px;
+    justify-content: left;
+    size: cover;
+    margin: 2px 120px;
+    
+}
+
+.play-area{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+button{
+    background-color:  rgb(6, 6, 230)     ;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+button:hover {
+    background-color:rgb(34, 95, 236) ;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+
+button:active {
+    background-color: rgb(26, 4, 136);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    color: rgb(14, 0, 0);
+}
+
+.result_num{
+    font-size: 150px;
+    margin-top: 15px;
+    margin-bottom: 0px; 
+    color: rgb(248, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    width: 60px;
+    border-radius: 12px;
+    Padding: 2px 8px;
+}
+
+#display_result{
+   font-size: 40px;
+}
+
+.span_gift{
+    color: green;
+    font-weight: bold;
+    font-size: 45px;
+}
+@media (max-width: 600px) {
+    header {
+        flex-direction: row;
+        align-items: center;
+        margin: none;
+    }
+    
+    h1{
+        font-size: 14px;
+        margin: 10px 0;
+    }
+
+    .header-logos{
+        height: 40px;
+        width: 40px;
+        padding: 1px 5px;
+    }
+
+    .lottery-card{
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    .ticket-image{
+        height: 200px;
+        width: 250px;
+        margin: 2px 20px;
+    }
+    h2{
+        font-size: 30px;
+        margin: 10px 0;
+    }
+    .result_num{
+        font-size: 80px;
+        margin-top: 15px;
+        margin-bottom: 0px; 
+        width: 40px;
+        border-radius: 8px;
+        Padding: 2px 4px;
+    }
+    #display_result{
+        font-size: 20px;
+        margin: 10px 0;
+    }
+    .span_gift{
+        font-size: 25px;
+    }
+
+}
+
+@media (min-width: 600px) {
+    header {
+        flex-direction: row;
+        align-items: center;
+        margin: none;
+        width: 100%;
+    }
+    
+}
